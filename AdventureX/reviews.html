@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdventureX - Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ff77b6;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            text-align: center;
+            padding: 2rem;
+        }
+        .review-category {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        .review-box {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            width: 350px; 
+            height: 350px;
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-around;
+            align-items: center; 
+            text-align: center; 
+            text-decoration: none;
+            color: #333;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+            padding: 1.5rem;
+        }
+        .review-box:hover {
+            transform: scale(1.05); 
+            background-color: rgba(255, 119, 182, 0.1); 
+            border: 2px solid #ff77b6; 
+        }
+        .review-box img {
+            border-radius: 50%;
+            width: 80px; 
+            height: 80px; 
+            object-fit: cover; 
+            margin-bottom: 1rem;
+        }
+        .review-box h2 {
+            font-size: 1.25rem; 
+            color: #ff77b6;
+            margin-bottom: 0.5rem;
+        }
+        .review-box p {
+            margin: 0.5rem 0;
+            font-size: 1rem; 
+        }
+        footer {
+            background-color: #ff77b6;
+            padding: 1rem;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="about.html" target="_blank">About Us</a></li>
+                <li>
+                    <a href="products.html" target="_blank">Products</a>
+                    <ul>
+                        <li><a href="tents.html" target="_blank">Tents</a></li>
+                        <li><a href="sleepingbags.html" target="_blank">Sleeping Bags</a></li>
+                        <li><a href="backpacks.html" target="_blank">Backpacks</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="features.html" target="_blank">Features</a>
+                    <ul>
+                        <li><a href="waterproofing.html" target="_blank">Waterproofing</a></li>
+                        <li><a href="durability.html" target="_blank">Durability</a></li>
+                        <li><a href="comfort.html" target="_blank">Comfort</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html" target="_blank">Reviews</a></li>
+                <li><a href="contact.html" target="_blank">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Customer Reviews</h1>
+        <div class="review-category">
+            <div class="review-box">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe" class="review-img">
+                <h2>John Doe</h2>
+                <p>"I recently purchased a tent from AdventureX, and I couldn't be happier. The quality is top-notch, and it withstood a heavy downpour without any leaks. Highly recommended!"</p>
+            </div>
+            <div class="review-box">
+                <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Jane Smith" class="review-img">
+                <h2>Jane Smith</h2>
+                <p>"The sleeping bag I bought is incredibly comfortable and kept me warm during my last camping trip. The materials are high quality, and it was worth every penny."</p>
+            </div>
+            <div class="review-box">
+                <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Michael Johnson" class="review-img">
+                <h2>Michael Johnson</h2>
+                <p>"I got a backpack from AdventureX, and it has exceeded my expectations. It's durable, spacious, and very comfortable to carry. Perfect for long hikes!"</p>
+            </div>
+            <div class="review-box">
+                <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Emily Davis" class="review-img">
+                <h2>Emily Davis</h2>
+                <p>"AdventureX's tents are amazing! They are easy to set up and provide great protection against the elements. My family and I had a fantastic camping experience."</p>
+            </div>
+            <div class="review-box">
+                <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Daniel Wilson" class="review-img">
+                <h2>Daniel Wilson</h2>
+                <p>"The quality of the backpacks is outstanding. I use mine for daily commuting and it still looks brand new. Highly recommend to anyone looking for durability."</p>
+            </div>
+            <div class="review-box">
+                <img src="https://randomuser.me/api/portraits/women/6.jpg" alt="Amanda Brown" class="review-img">
+                <h2>Amanda Brown</h2>
+                <p>"I bought a hiking kit from AdventureX and was impressed by the attention to detail and functionality. The gear is well-designed and perfect for my adventures."</p>
+            </div>
+            <div class="review-box">
+                <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="Chris Martinez" class="review-img">
+                <h2>Chris Martinez</h2>
+                <p>"The customer service at AdventureX is top-notch. They helped me choose the right gear for my needs and answered all my questions promptly. Great company!"</p>
+            </div>
+            <div class="review-box">
+                <img src="https://randomuser.me/api/portraits/women/8.jpg" alt="Sophia Taylor" class="review-img">
+                <h2>Sophia Taylor</h2>
+                <p>"AdventureX's sleeping bags are so cozy! They kept me warm even in cold weather. I love the quality and comfort. Will definitely buy more products from them."</p>
+            </div>
+            <div class="review-box">
+                <img src="https://randomuser.me/api/portraits/men/9.jpg" alt="James Anderson" class="review-img">
+                <h2>James Anderson</h2>
+                <p>"I recently purchased a camping stove from AdventureX, and it performed excellently. Easy to use and efficient. Perfect addition to my camping gear."</p>
+            </div>
+            <div class="review-box">
+                <img src="https://randomuser.me/api/portraits/women/10.jpg" alt="Olivia Thomas" class="review-img">
+                <h2>Olivia Thomas</h2>
+                <p>"The tent I bought is spacious and durable. It handled strong winds and rain without any issues. A great investment for

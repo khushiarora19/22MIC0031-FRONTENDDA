@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdventureX - Tents</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            font-family: 'Dancing Script', cursive;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fef3f8; 
+            color: #333;
+            font-weight: bold;
+        }
+
+        header {
+            background-color: #f78fb3;
+            color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: block;
+            font-size: 1.4em;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff6f91; 
+        }
+
+        
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #f78fb3;
+            padding: 10px;
+            border-radius: 5px;
+            top: 100%;
+            left: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            margin: 5px 0;
+        }
+
+        nav ul li ul li a {
+            display: block;
+            padding: 12px;
+            color: #fff;
+            text-align: left;
+            text-decoration: none;
+            font-size: 1.3em;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #ff6f91;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        main h1 {
+            color: #ff61a6; 
+            font-size: 4em;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-box {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            width: 400px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #333;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+        }
+
+        .product-box:hover {
+            transform: scale(1.1);
+            background-color: rgba(255, 119, 182, 0.1);
+            border: 2px solid #ff77b6;
+        }
+
+        .product-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0.4;
+        }
+
+        .product-box h2 {
+            position: relative;
+            z-index: 1;
+            font-size: 2rem;
+            color: #ff77b6;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #f78fb3; 
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="about.html" target="_blank">About Us</a></li>
+                <li>
+                    <a href="products.html" target="_blank">Products</a>
+                    <ul>
+                        <li><a href="tents.html" target="_blank">Tents</a></li>
+                        <li><a href="sleepingbags.html" target="_blank">Sleeping Bags</a></li>
+                        <li><a href="backpacks.html" target="_blank">Backpacks</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="features.html" target="_blank">Features</a>
+                    <ul>
+                        <li><a href="waterproofing.html" target="_blank">Waterproofing</a></li>
+                        <li><a href="durability.html" target="_blank">Durability</a></li>
+                        <li><a href="comfort.html" target="_blank">Comfort</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html" target="_blank">Reviews</a></li>
+                <li><a href="contact.html" target="_blank">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Tents</h1>
+        <div class="product-container">
+            <a href="#" class="product-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIpffpM6OMhu0ZeBFKESfx-5-jYvFOcIsOLg&s" alt="Tent 1">
+                <h2>Tent 1 - $100</h2>
+            </a>
+            <a href="#" class="product-box">
+                <img src="https://m.media-amazon.com/images/I/41MbG4GzAqL.jpg" alt="Tent 2">
+                <h2>Tent 2 - $150</h2>
+            </a>
+            <a href="#" class="product-box">
+                <img src="https://media.istockphoto.com/id/142533334/photo/yellow-dome-tent-with-open-zip-enclosure.jpg?s=612x612&w=0&k=20&c=GZyiiSF95j0Yxa_7pc6LUebf8MVvRebJcrnMXETN5eU=" alt="Tent 3">
+                <h2>Tent 3 - $200</h2>
+            </a>
+            <a href="#" class="product-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTs395ASaQKhStf2ueKuQ8mfGwsRu8x0tZqQ&s" alt="Tent 4">
+                <h2>Tent 4 - $250</h2>
+            </a>
+            <a href="#" class="product-box">
+                <img src="https://m.media-amazon.com/images/I/61qZbcKiwmL._AC_UF350,350_QL80_.jpg" alt="Tent 5">
+                <h2>Tent 5 - $300</h2>
+            </a>
+            <a href="#" class="product-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS7pbKUuyUprDYqN-Bv67jqKnLImO_qnt7ceyQf1f9yspd5kPhUYUw0qJyzpSmMoX_xlI&usqp=CAU" alt="Tent 6">
+                <h2>Tent 6 - $350</h2>
+            </a>
+            <a href="#" class="product-box">
+                <img src="https://m.media-amazon.com/images/I/616dRlZSx8L._AC_UF894,1000_QL80_.jpg" alt="Tent 7">
+                <h2>Tent 7 - $400</h2>
+            </a>
+            <a href="#" class="product-box">
+                <img src="https://m.media-amazon.com/images/I/61yLyt4g2-L.jpg" alt="Tent 8">
+                <h2>Tent 8 - $450</h2>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 AdventureX</p>
+    </footer>
+</body>
+</html>
+             

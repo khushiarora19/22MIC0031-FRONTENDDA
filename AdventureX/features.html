@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdventureX - Features</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ff77b6;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            text-align: center;
+            padding: 2rem;
+        }
+        .feature-category {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap; 
+        }
+        .feature-box {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            width: 400px; 
+            height: 250px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: scale(1.1);
+            background-color: rgba(255, 119, 182, 0.1); 
+            border: 2px solid #ff77b6; 
+        }
+        .feature-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0.4;
+        }
+        .feature-box h2 {
+            position: relative;
+            z-index: 1;
+            font-size: 2rem; 
+            color: #ff77b6;
+            margin: 0;
+        }
+        footer {
+            background-color: #ff77b6;
+            padding: 1rem;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="about.html" target="_blank">About Us</a></li>
+                <li>
+                    <a href="products.html" target="_blank">Products</a>
+                    <ul>
+                        <li><a href="tents.html" target="_blank">Tents</a></li>
+                        <li><a href="sleepingbags.html" target="_blank">Sleeping Bags</a></li>
+                        <li><a href="backpacks.html" target="_blank">Backpacks</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="features.html" target="_blank">Features</a>
+                    <ul>
+                        <li><a href="waterproofing.html" target="_blank">Waterproofing</a></li>
+                        <li><a href="durability.html" target="_blank">Durability</a></li>
+                        <li><a href="comfort.html" target="_blank">Comfort</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html" target="_blank">Reviews</a></li>
+                <li><a href="contact.html" target="_blank">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Features</h1>
+        <div class="feature-category">
+            <a href="waterproofing.html" class="feature-box">
+                <img src="https://tallypress.com/wp-content/uploads/2021/11/top-10-outdoor-equipment-stores-in-singapore.png" alt="Waterproofing">
+                <h2>Waterproofing</h2>
+            </a>
+            <a href="durability.html" class="feature-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPynAiGvWxaZBaEO6f1n_QndILrWG4Xqy0og&s" alt="Durability">
+                <h2>Durability</h2>
+            </a>
+            <a href="comfort.html" class="feature-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShlbUzv1QWy93tRLSnKP-VFi9pkNtw_-roIYMqN_HlfpLLIqgVjqL-X9jSaAqEw6-fdgA&usqp=CAU" alt="Comfort">
+                <h2>Comfort</h2>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 AdventureX. All rights reserved.</p>
+    </footer>
+</body>
+</html>

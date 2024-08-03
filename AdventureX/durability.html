@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdventureX - Durability</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            font-family: 'Dancing Script', cursive;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fef3f8; 
+            color: #333;
+            font-weight: bold; 
+        }
+
+        header {
+            background-color: #f78fb3; 
+            color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: block;
+            font-size: 1.4em;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff6f91; 
+        }
+
+       
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #f78fb3;
+            padding: 10px;
+            border-radius: 5px;
+            top: 100%;
+            left: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            margin: 5px 0;
+        }
+
+        nav ul li ul li a {
+            display: block;
+            padding: 12px;
+            color: #fff;
+            text-align: left;
+            text-decoration: none;
+            font-size: 1.3em;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #ff6f91; 
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        main h1 {
+            color: #ff61a6; 
+            font-size: 4em;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        main p {
+            font-size: 1.3em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        main img {
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        footer {
+            background-color: #f78fb3; 
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="about.html" target="_blank">About Us</a></li>
+                <li>
+                    <a href="products.html" target="_blank">Products</a>
+                    <ul>
+                        <li><a href="tents.html" target="_blank">Tents</a></li>
+                        <li><a href="sleepingbags.html" target="_blank">Sleeping Bags</a></li>
+                        <li><a href="backpacks.html" target="_blank">Backpacks</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="features.html" target="_blank">Features</a>
+                    <ul>
+                        <li><a href="waterproofing.html" target="_blank">Waterproofing</a></li>
+                        <li><a href="durability.html" target="_blank">Durability</a></li>
+                        <li><a href="comfort.html" target="_blank">Comfort</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html" target="_blank">Reviews</a></li>
+                <li><a href="contact.html" target="_blank">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Durability</h1>
+        <p>Our gear is built to last. Using high-quality materials and expert craftsmanship, we ensure that our products withstand the toughest conditions and the most rigorous use. Whether it's harsh weather or rugged terrain, our gear is designed to be durable and reliable.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXgMrLP7DFthsMp6TWeqZnECNsT_qUBTPP8w&s" alt="Durable Gear" />
+    </main>
+    <footer>
+        <p>&copy; 2024 AdventureX. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdventureX - Contacts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ff77b6;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            text-align: center;
+            padding: 2rem;
+        }
+        .contact-category {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap; 
+        }
+        .contact-box {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            width: 350px; 
+            height: 300px;
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-around; 
+            align-items: flex-start; 
+            text-align: left; 
+            text-decoration: none;
+            color: #333;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+            padding: 1.5rem;
+        }
+        .contact-box:hover {
+            transform: scale(1.05); 
+            background-color: rgba(255, 119, 182, 0.1); 
+            border: 2px solid #ff77b6; 
+        }
+        .contact-box h2 {
+            font-size: 1.5rem; 
+            color: #ff77b6;
+            margin-bottom: 0.5rem;
+        }
+        .contact-box p {
+            margin: 0.3rem 0;
+            font-size: 1rem; 
+        }
+        footer {
+            background-color: #ff77b6;
+            padding: 1rem;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="about.html" target="_blank">About Us</a></li>
+                <li>
+                    <a href="products.html" target="_blank">Products</a>
+                    <ul>
+                        <li><a href="tents.html" target="_blank">Tents</a></li>
+                        <li><a href="sleepingbags.html" target="_blank">Sleeping Bags</a></li>
+                        <li><a href="backpacks.html" target="_blank">Backpacks</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="features.html" target="_blank">Features</a>
+                    <ul>
+                        <li><a href="waterproofing.html" target="_blank">Waterproofing</a></li>
+                        <li><a href="durability.html" target="_blank">Durability</a></li>
+                        <li><a href="comfort.html" target="_blank">Comfort</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html" target="_blank">Reviews</a></li>
+                <li><a href="contact.html" target="_blank">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <p>We are here to assist you. Please find our contact details below:</p>
+        <div class="contact-category">
+            <div class="contact-box">
+                <h2>Headquarters</h2>
+                <p><strong>Address:</strong> 123 Adventure Lane, Outdoor City, CA 12345, USA</p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                <p><strong>Email:</strong> support@adventurex.com</p>
+            </div>
+            <div class="contact-box">
+                <h2>Customer Service</h2>
+                <p><strong>Phone:</strong> +1 (555) 987-6543</p>
+                <p><strong>Email:</strong> service@adventurex.com</p>
+            </div>
+            <div class="contact-box">
+                <h2>Technical Support</h2>
+                <p><strong>Phone:</strong> +1 (555) 456-7890</p>
+                <p><strong>Email:</strong> techsupport@adventurex.com</p>
+            </div>
+            <div class="contact-box">
+                <h2>Sales Department</h2>
+                <p><strong>Phone:</strong> +1 (555) 678-9101</p>
+                <p><strong>Email:</strong> sales@adventurex.com</p>
+            </div>
+            <div class="contact-box">
+                <h2>Press Inquiries</h2>
+                <p><strong>Phone:</strong> +1 (555) 234-5678</p>
+                <p><strong>Email:</strong> press@adventurex.com</p>
+            </div>
+            <div class="contact-box">
+                <h2>Partnerships</h2>
+                <p><strong>Phone:</strong> +1 (555) 345-6789</p>
+                <p><strong>Email:</strong> partnerships@adventurex.com</p>
+            </div>
+            <div class="contact-box">
+                <h2>Return & Refunds</h2>
+                <p><strong>Phone:</strong> +1 (555) 567-8901</p>
+                <p><strong>Email:</strong> returns@adventurex.com</p>
+            </div>
+            <div class="contact-box">
+                <h2>Feedback</h2>
+                <p><strong>Email:</strong> feedback@adventurex.com</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 AdventureX. All rights reserved.</p>
+    </footer>
+</body>
+</html>
